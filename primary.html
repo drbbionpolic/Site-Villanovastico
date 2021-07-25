@@ -2,46 +2,97 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
 </head>
 
 <body>
 
-    <div class="header-container">
-        <div class="header-icon-menu">
-            <i class="header-icon bars icon"></i>
-        </div>
-        <div class="header-logo">
-            <div class="header-logo-img">
-                <img height="60%" src="imagens/logo-principal.png" alt="Recarregue" />
-            </div>
-            <div class="header-logo-title">
-
-            </div>
-        </div>
-        <div style="display: hidden;" class="show-icon-smaller">
-            <a href="#"><i class="user outline icon"></i> </a>
-        </div>
+  <div class="header-container">
+    <div class="header-icon-menu">
+      <i class="header-icon bars icon"></i>
     </div>
-    <nav id="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Parceiras</a></li>
-            <li><a href="#">Equipe</a></li>
-            <li><a href="#">Contato</a></li>
+    <div class="header-logo">
+      <div class="header-logo-img">
+        <img height="60%" src="imagens/logo-principal.png" alt="Recarregue" />
+      </div>
+      <div class="header-logo-title">
 
-            <li style="float: right; margin-right: 20px; @media (max-width: 1159px)  {
-display: none;}"><a href="#"><i class="user outline icon"></i>Cadastre-se</a>
-            </li>
+      </div>
+    </div>
+  </div>
 
+  <nav>
+    <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+    <ul class="menu">
+      <li><a class="homer" href="#"><i class="fa fa-home"></i> HOME</a>
+        <ul class="sub-menu">
+          <li><a href="#">Sub-Menu 1</a></li>
+          <li><a href="#">Sub-Menu 2</a></li>
+          <li><a href="#">Sub-Menu 3</a></li>
+          <li><a href="#">Sub-Menu 4</a></li>
+          <li><a href="#">Sub-Menu 5</a></li>
         </ul>
-    </nav>
+      </li>
+      <li><a href="#"><i class="fa fa-user"></i> ABOUT</a></li>
+      <li><a href="#"><i class="fa fa-camera"></i> PORTFOLIO</a>
+        <ul class="sub-menu">
+          <li><a href="#">Sub-Menu 1</a></li>
+          <li><a href="#">Sub-Menu 2</a>
+            <ul>
+              <li><a href="#">Sub Sub-Menu 1</a></li>
+              <li><a href="#">Sub Sub-Menu 2</a></li>
+              <li><a href="#">Sub Sub-Menu 3</a></li>
+              <li><a href="#">Sub Sub-Menu 4</a></li>
+              <li><a href="#">Sub Sub-Menu 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Sub-Menu 3</a>
+            <ul>
+              <li><a href="#">Sub Sub-Menu 1</a></li>
+              <li><a href="#">Sub Sub-Menu 2</a></li>
+              <li><a href="#">Sub Sub-Menu 3</a></li>
+              <li><a href="#">Sub Sub-Menu 4</a></li>
+              <li><a href="#">Sub Sub-Menu 5</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fa fa-bullhorn"></i> BLOG</a></li>
+      <li><a href="#"><i class="fa fa-tags"></i> CATEGORIES</a>
+        <ul class="sub-menu">
+          <li><a href="#">Sub-Menu 1</a></li>
+          <li><a href="#">Sub-Menu 2</a>
+            <ul>
+              <li><a href="#">Sub Sub-Menu 1</a></li>
+              <li><a href="#">Sub Sub-Menu 2</a></li>
+              <li><a href="#">Sub Sub-Menu 3</a></li>
+              <li><a href="#">Sub Sub-Menu 4</a></li>
+              <li><a href="#">Sub Sub-Menu 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Sub-Menu 3</a>
+            <ul>
+              <li><a href="#">Sub Sub-Menu 1</a></li>
+              <li><a href="#">Sub Sub-Menu 2</a></li>
+              <li><a href="#">Sub Sub-Menu 3</a></li>
+              <li><a href="#">Sub Sub-Menu 4</a></li>
+              <li><a href="#">Sub Sub-Menu 5</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fa fa-envelope"></i> CONTACT</a></li>
+      <li><a href="#"><i class="fa fa-sitemap"></i> SITEMAP</a></li>
+      <li><a href="#"><i class="fa fa-exclamation-triangle"></i> DISCLAIMER</a></li>
+    </ul>
+  </nav>
 
 </body>
 
