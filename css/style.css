@@ -1,0 +1,19 @@
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #FF6600;
+}
+.menu-header {
+    padding: 30px;
+    font-size: 35px;
+    width: 10px;
+}
+.menu-header :hover {
+cursor: pointer;
+margin-left: 15px;
+}
+.logo-header img {
+width: 100px;
+height: 50px;
+
+}
