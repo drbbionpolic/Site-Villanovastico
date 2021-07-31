@@ -4,15 +4,15 @@ import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm";
 export class User extends BaseEntity {
 
   @PrimaryGeneratedColumn()
-  id: number | undefined;
+  public id?: number;
 
   @Column()
-  nick: string | undefined;
+  public nick?: string;
 
   @Column()
-  email: string | undefined;
+  public email?: string;
 
   @Column()
-  password: string | undefined;
+  public password?: string;
 
 }
